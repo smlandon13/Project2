@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZOOM MTC Delivery</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://use.fontawesome.com/b92b388c33.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Zoom MTC Fulfillment</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Store.html">Store</a></li>
+                <li><a href="Check%20Out.html">Check Out</a></li>
+                <li><a href="About%20Us.html">About Us</a></li>
+                <li class="active"><a href="Contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<form method="post">
+    <fieldset class="centerBox"><legend>Contact Us</legend>
+        <div class="bottomMargin">
+            <label for="firstName">First Name: </label><input name="firstName" id="firstName" required>
+        </div>
+        <div class="bottomMargin">
+            <label for="lastName">Last Name: </label><input name="lastName" id="lastName" required>
+        </div>
+        <div class="bottomMargin">
+            <label for="email">Email: </label><input name="email" id="email" type="email" required>
+        </div>
+        <div>
+            <label for="Comments">Comments:</label>
+        </div>
+        <div>
+            <textarea name="Comments" id="Comments" cols="50" rows="10" required placeholder="Comment Here"></textarea>
+        </div>
+        <div class="bottomMargin">
+            <input type="submit" value="submit">
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>
