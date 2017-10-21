@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZOOM MTC Delivery</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://use.fontawesome.com/b92b388c33.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Zoom MTC Fulfillment</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="Store.html">Store</a></li>
+                <li><a href="Check%20Out.html">Check Out</a></li>
+                <li><a href="About%20Us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+    <fieldset class="store"><legend>Store</legend>
+
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li><a data-toggle="tab" href="#menu1">Cookies</a></li>
+                <li><a data-toggle="tab" href="#menu2">Chips</a></li>
+                <li><a data-toggle="tab" href="#menu3">Dips</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Cookies</h3>
+                    <p>
+                        <img src="cookies.jpg" width="100" height="">
+                        <label class="textlabel" for="cookies">Cookies</label>
+                    <div>
+                        <select id="cookies" name="cookies" class="textinput">
+                            <option>Oreo</option>
+                            <option>Chips Deluxe</option>
+                            <option>Chocolate Chip</option>
+                            <option>Sugar</option>
+                            <option>Oatmeal Chocolate Chip</option>
+                            <option>Oatmeal Raisin</option>
+                            <option>Snickerdoodle</option>
+                            <option>Double Chocolate</option>
+                        </select>
+                    </div>
+                    Price: $3.00
+                    <button>Add to Cart</button>
+                </div>
+
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Chips</h3>
+                    <p>
+                        <img src="chips2.png" width="100" height="auto">
+                        <label class="textlabel" for="chips">Chips</label>
+                    <div>
+                        <select id="chips" name="chips" class="textimput">
+                            <option>Doritos</option>
+                            <option>Cool Ranch Doritos</option>
+                            <option>Cheetos</option>
+                            <option>Tortilla Chips</option>
+                            <option>Sun Chips</option>
+                            <option>Pringles</option>
+                        </select>
+                    </div>
+                    Price: $4.00
+                    <button>Add to Cart</button>
+                </div>
+
+                <div id="menu3" class="tab-pane fade">
+                    <h3>Dips</h3>
+                    <p>
+                        <img src="dips.jpg" width="100" height="">
+                        <label class="textlable" for="dips">Dips</label>
+                    <div>
+                        <select id="dips" name="dips" class="textimput">
+                            <option>Cheese</option>
+                            <option>Salsa</option>
+                            <option>Ranch</option>
+                        </select>
+                    </div>
+                    Price: $3.00
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+
+    </fieldset>
+</div>
+</body>
+</html>
