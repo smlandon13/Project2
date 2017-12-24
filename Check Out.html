@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>ZOOM MTC Delivery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="javascript.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,15 +19,14 @@
                 <a class="navbar-brand" href="#">Zoom MTC Fulfillment</a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="Store.html">Store</a></li>
                 <li class="active"><a href="Check%20Out.html">Check Out</a></li>
                 <li><a href="About%20Us.html">About Us</a></li>
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Create Account/Login</a></li>
+                <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
             </ul>
         </div>
     </nav>
@@ -36,7 +37,7 @@
     </div>
 </div>
 <form id="mainForm" action="#" method="post">
-    <fieldset class="box">
+    <fieldset class="centerBox">
         <legend>Billing Info</legend>
         <div>
             <p>
@@ -64,7 +65,7 @@
             <p>
                 <label class="textlabel" for="cityInput">City</label>
                 <input id="cityInput" name="City" type="text" class="textinput" required="required" placeholder="City/Town">
-                <label class="textlabel" for="state">State</label>
+                <label class="textlabel" for="state">State/Territory</label>
                 <select id="state" name="state" class="textinput" required="required">
                     <option> ---------- </option>
                     <option value="AL">Alabama</option>
@@ -128,7 +129,7 @@
                 </select>
             </p>
             <p>
-                <label class="textlabel" for="zip">ZIP code</label>
+                <label class="textlabel" for="zip">Zip code</label>
                 <input id="zip" name="Zip" type="text" class="textinput" required="required" size="10" placeholder="Zip Code">
             </p>
             <p>
@@ -141,7 +142,7 @@
             </p>
         </div>
     </fieldset>
-    <fieldset class="box">
+    <fieldset class="centerBox">
         <legend>Missionary Details</legend>
         <div>
             <form>
@@ -165,8 +166,8 @@
                 <input id="departure" name="departure" type="date" class="textinput" required="required">
             </p>
             <p>
-                <label class="textlabel" for="today">Today's Date</label>
-                <input id="today" name="today" type="date" class="textinput" required="required">
+                <label class="textlabel" for="tDate">Today's Date</label>
+                <input id="tDate" readonly="readonly">
             <p>
                 <label class="textlabel" for="message">Message (optional)</label>
             </p>
